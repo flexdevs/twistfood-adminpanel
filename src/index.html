@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fast Food Shop Admin Panel</title>
+ <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <h1>Fast Food Shop Admin Panel</h1>
+
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#orders">Orders</a>
+      <a href="#customers">Customers</a>
+    </nav>
+
+    <section id="menu">
+      <h2>Menu</h2>
+      <table>
+        <tr>
+          <th>Item</th>
+          <th>Price</th>
+          <th>Actions</th>
+        </tr>
+        <tr>
+          <td>Hamburger</td>
+          <td>$5.00</td>
+          <td>
+            <button class="edit_btn" onclick="editItem('Hamburger')">Edit</button>
+            <button class="delete" onclick="deleteItem('Hamburger')">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Pizza</td>
+          <td>$7.00</td>
+          <td>
+            <button class="edit_btn" onclick="editItem('Pizza')">Edit</button>
+            <button class="delete" onclick="deleteItem('Pizza')">Delete</button>
+          </td>
+        </tr>
+      </table>
+      <button onclick="addItem()">Add Item</button>
+    </section>
+
+    <section id="orders">
+      Orifjonov Abbosbek, [1/11/23 2:03 PM]
+      <h2>Orders</h2>
+      <table>
+        <tr>
+          <th>Order Number</th>
+          <th>Customer</th>
+          <th>Items</th>
+          <th>Total</th>
+          <th>Actions</th>
+        </tr>
+        <tr>
+          <td>#1</td>
+          <td>John Smith</td>
+          <td>Hamburger, Fries</td>
+          <td>$7.00</td>
+          <td>
+            <button class="cancel_btn"  onclick="cancelOrder('#1')">Cancel</button>
+          </td>
+        </tr>
+        <tr>
+          <td>#2</td>
+          <td>Jane Doe</td>
+          <td>Pizza, Soda</td>
+          <td>$10.00</td>
+          <td>
+            <button class="cancel_btn" onclick="cancelOrder('#2')">Cancel</button>
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="customers">
+      <h2>Customers</h2>
+      <table>
+        <tr>
+          <th>Name</th>
+      
+          <th>Phone</th>
+          <th>Actions</th>
+        </tr>
+        <tr>
+          <td>John Smith</td>
+          <td>555-555-5555</td>
+          <td>
+            <button class="edit_btn" onclick="editCustomer('John Smith')">Edit</button>
+            <button class="delete" onclick="deleteCustomer('John Smith')">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Jane Doe</td>
+          <td>555-555-5556</td>
+          <td>
+            <button class="edit_btn" onclick="editCustomer('Jane Doe')">Edit</button>
+            <button class="delete" onclick="deleteCustomer('Jane Doe')">Delete</button>
+          </td>
+        </tr>
+      </table>
+      <button onclick="addCustomer()">Add Customer</button>
+    </section>
+   <script src="./app.js"></script>
+  </body>
+</html>

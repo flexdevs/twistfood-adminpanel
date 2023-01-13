@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+}
+h1,
+h2 {
+  text-align: center;
+}
+nav {
+  text-align: center;
+  margin-bottom: 20px;
+}
+nav a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+nav a:hover {
+  background-color: black;
+  color: white;
+
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th,
+td {
+  border: 1px solid black;
+  padding: 10px;
+}
+th {
+  text-align: left;
+  background-color: gray;
+  color: white;
+}
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: gray;
+  color: white;
+}
+button:hover {
+  cursor: pointer;
+}
+.delete {
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+}
+.edit_btn {
+  color: black;
+  border-radius: 5px;
+  background-color: yellow;
+}
+.cancel_btn {
+  color: #fff;
+  background-color: black;
+  border-radius: 5px;
+}
