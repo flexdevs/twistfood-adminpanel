@@ -38,7 +38,7 @@ function addCustomer() {
     email: customerEmail,
     phone: customerPhone,
   });
-  
+
   refreshCustomersTable();
 }
 function editCustomer(customerName) {
@@ -70,4 +70,20 @@ function deleteCustomer(customerName) {
   refreshCustomersTable();
 }
 
-const apiUrl = ''
+let modalBtn = document.getElementById("add_admin_btn");
+let modal = document.getElementById("modal");
+
+modalBtn.onclick = function () {
+  modal.style.display = "flex";
+};
+
+let closeBtn = document.getElementById("close_btn");
+
+closeBtn.onclick = function () {
+  modal.style.display = "none";
+};
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
