@@ -37,8 +37,20 @@ fetch("http://185.217.131.186:5055/api/admins/login", requestOptions)
       window.location = "./index.html";
     })
     .catch((error) => {
+      window.location.reload();   
       console.log("Login failed:", error);
       alert("Invalid Email or Password, please try again.");
+      window.location.reload();
     });
 })
 
+
+
+let modalBtn = document.getElementById("#add_admin_btn");
+let modal = document.getElementById("modal");
+
+
+modalBtn.onclick = function () {
+
+  modal.style.display = "block";
+}
