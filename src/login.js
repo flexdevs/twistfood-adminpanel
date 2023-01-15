@@ -46,11 +46,3 @@ fetch("http://185.217.131.186:5055/api/admins/login", requestOptions)
 
 
 
-let modalBtn = document.getElementById("#add_admin_btn");
-let modal = document.getElementById("modal");
-
-
-modalBtn.onclick = function () {
-
-  modal.style.display = "block";
-}
