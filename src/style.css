@@ -28,8 +28,6 @@
        url('../fonts/poppins-v20-latin-800.woff') format('woff'); 
 }  */
 
-
-
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -54,13 +52,12 @@ h2 {
   border-radius: 24px;
   height: 50px;
   color: green;
-  border: 2px solid ;
+  border: 2px solid;
   border-color: linear-gradient(to right green, blue);
   background-color: #fff;
 }
 
-
-.modal{
+.modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   justify-content: center;
@@ -71,10 +68,10 @@ h2 {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
 }
-.modal_wrapper{
+.modal_wrapper {
   display: flex;
   width: 550px;
   overflow: auto;
@@ -120,32 +117,28 @@ h2 {
 #admin-registration-form input[type="submit"]:hover {
   background-color: #45a049;
 }
-.file_label{
-  
-    display: inline-block;
-    background-color: #fff;
-    color: #000;
-    padding: 0.5rem;
-    border-radius: 0.3rem;
-    cursor: pointer;
-    margin-top: 1rem;
-    opacity: 0.8;
-  
+.file_label {
+  display: inline-block;
+  background-color: #fff;
+  color: #000;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  opacity: 0.8;
 }
 
-
-.add_admin_btn svg{
+.add_admin_btn svg {
   width: 24px;
   fill: green;
 }
-.close_btn{
+.close_btn {
   width: 50px;
   height: 50px;
   position: absolute;
   right: 5px;
   top: -5px;
   cursor: pointer;
-
 }
 nav {
   text-align: center;
@@ -187,18 +180,19 @@ button {
 button:hover {
   cursor: pointer;
 }
-.delete {
-  color: white;
-  background-color: red;
-  border-radius: 5px;
-}
-.edit_btn {
-  color: black;
-  border-radius: 5px;
-  background-color: yellow;
-}
+
 .cancel_btn {
   color: #fff;
   background-color: black;
   border-radius: 5px;
+}
+
+.edit-button {
+  background-color: yellow;
+  color: #000;
+  border-radius: 10px;
+}
+.delete-button{
+  background-color: red;
+  border-radius: 10px;
 }

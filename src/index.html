@@ -25,8 +25,8 @@
 
       <div class="modal" id="modal">
         <div class="modal_wrapper">
-          <div id="close_btn" class="close_btn"  href=""
-            ><?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+          <div id="close_btn" class="close_btn" href="">
+            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
             <svg
               fill="#000000"
               width="50px"
@@ -36,8 +36,9 @@
             >
               <path
                 d="M16.707,8.707,13.414,12l3.293,3.293a1,1,0,1,1-1.414,1.414L12,13.414,8.707,16.707a1,1,0,1,1-1.414-1.414L10.586,12,7.293,8.707A1,1,0,1,1,8.707,7.293L12,10.586l3.293-3.293a1,1,0,1,1,1.414,1.414Z"
-              /></svg
-          ></div>
+              />
+            </svg>
+          </div>
           <form id="admin-registration-form">
             <h1>Admin Registration</h1>
             <label for="username">First Name:</label>
@@ -47,12 +48,7 @@
             <input type="text" id="mLastName" name="password" required />
             <br />
             <label for="phone">Phone Number:</label>
-            <input
-              type="text"
-              id="phone"
-              name="confirm-password"
-              required
-            />
+            <input type="text" id="phone" name="confirm-password" required />
             <br />
             <label for="email">BirthDate:</label>
             <input type="text" id="birthdate" name="email" required />
@@ -87,7 +83,7 @@
             <label for="image">Image:</label>
             <br />
             <label class="file_label" for="upload">Choose Photo</label>
-            <input type="file" id="mUpload" name="file"  required />
+            <input type="file" id="mUpload" name="file" required />
             <br />
             <input type="submit" id="register_btn" value="Register" />
           </form>
@@ -102,38 +98,27 @@
 
     <section id="menu">
       <h2>Menu</h2>
-      <table>
+
+      
+      <table id="category">
         <tr>
-          <th>Item</th>
-          <th>Price</th>
-          <th>Actions</th>
-        </tr>
-        <tr>
-          <td>Hamburger</td>
-          <td>$5.00</td>
+          <td id=""></td>
           <td>
-            <button class="edit_btn" onclick="editItem('Hamburger')">
-              Edit
-            </button>
-            <button class="delete" onclick="deleteItem('Hamburger')">
-              Delete
-            </button>
+            <button>edit</button>
           </td>
         </tr>
         <tr>
-          <td>Pizza</td>
-          <td>$7.00</td>
-          <td>
-            <button class="edit_btn" onclick="editItem('Pizza')">Edit</button>
-            <button class="delete" onclick="deleteItem('Pizza')">Delete</button>
-          </td>
+          <td></td>
         </tr>
+        <tr>
+          <td></td>
+        </tr>
+      
       </table>
       <button onclick="addItem()">Add Item</button>
     </section>
 
     <section id="orders">
-      Orifjonov Abbosbek, [1/11/23 2:03 PM]
       <h2>Orders</h2>
       <table>
         <tr>
@@ -146,7 +131,7 @@
         <tr>
           <td>#1</td>
           <td>John Smith</td>
-          <td>Hamburger, Fries</td>
+          <td id="list_item">Hamburger, Fries</td>
           <td>$7.00</td>
           <td>
             <button class="cancel_btn" onclick="cancelOrder('#1')">
@@ -172,12 +157,14 @@
       <h2>Customers</h2>
       <table>
         <tr>
+          <th>ID</th>
           <th>Name</th>
 
           <th>Phone</th>
           <th>Actions</th>
         </tr>
         <tr>
+          <td>1</td>
           <td>John Smith</td>
           <td>555-555-5555</td>
           <td>
@@ -190,6 +177,7 @@
           </td>
         </tr>
         <tr>
+          <td>1</td>
           <td>Jane Doe</td>
           <td>555-555-5556</td>
           <td>
@@ -204,6 +192,7 @@
       </table>
       <button onclick="addCustomer()">Add Customer</button>
     </section>
+
     <script src="./app.js"></script>
   </body>
 </html>

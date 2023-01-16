@@ -141,3 +141,33 @@ mRegBtn.addEventListener('click', async (e) => {
     console.error(error);
   }
 });
+
+var myHeaders = new Headers();
+myHeaders.append("Authorization", "Bearer " + localStorage.getItem("admin_token"));
+
+var formdata = new FormData();
+
+var requestOptions = {
+  method: 'GET',
+  headers: myHeaders,
+  redirect: 'follow'
+};
+
+fetch("http://185.217.131.186:5055/api/categories?page=1", requestOptions)
+  .then(response => response.json())
+  .then(data => {
+    let output = '<table>';
+    output += '<tr><th>ID</th><th>Products</th><th>Action</th></tr>';
+    data.forEach(item => {
+ 
+      output += `<tr>`;
+      output += `<td>${item.id}</td>`;
+      output += `<td>${item.categoryName}</td>`;
+      output += `<td><button class="edit-button">Edit</button> <button class="delete-button">Delete</button></td>`;
+      
+ 
+      output += `</tr>`;
+    });
+    document.getElementById('category').innerHTML = output;
+  })
+  .catch(error => console.log('error', error));
