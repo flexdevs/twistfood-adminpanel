@@ -1,0 +1,200 @@
+/* 
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+       url('../fonts/poppins-v20-latin-500.woff2') format('woff2'),
+       url('../fonts/poppins-v20-latin-500.woff') format('woff'); 
+}
+
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''),
+       url('../fonts/poppins-v20-latin-600.woff2') format('woff2'), 
+       url('../fonts/poppins-v20-latin-600.woff') format('woff'); 
+}
+
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  src: local(''),
+       url('../fonts/poppins-v20-latin-800.woff2') format('woff2'), 
+       url('../fonts/poppins-v20-latin-800.woff') format('woff'); 
+}  */
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+h1,
+h2 {
+  text-align: center;
+  color: green;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.add_admin_btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  right: 150px;
+  border-radius: 24px;
+  height: 50px;
+  color: green;
+  border: 2px solid;
+  border-color: linear-gradient(to right green, blue);
+  background-color: #fff;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  justify-content: center;
+  z-index: 1; /* Sit on top */
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal_wrapper {
+  display: flex;
+  width: 550px;
+  overflow: auto;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: #fefefe;
+  padding: 20px;
+  column-gap: 40px;
+}
+
+#admin-registration-form {
+  width: 100%;
+}
+
+#admin-registration-form label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+#admin-registration-form input[type="text"],
+#admin-registration-form input[type="password"],
+#admin-registration-form input[type="email"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#admin-registration-form input[type="submit"] {
+  width: 100%;
+  background-color: #008000;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#admin-registration-form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+.file_label {
+  display: inline-block;
+  background-color: #fff;
+  color: #000;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  opacity: 0.8;
+}
+
+.add_admin_btn svg {
+  width: 24px;
+  fill: green;
+}
+.close_btn {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 5px;
+  top: -5px;
+  cursor: pointer;
+}
+nav {
+  text-align: center;
+  margin-bottom: 20px;
+}
+nav a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+  opacity: 0.7;
+  border: 1px solid #008000;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+nav a:hover {
+  background-color: #008000;
+  color: white;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th,
+td {
+  border: 1px solid black;
+  padding: 10px;
+}
+th {
+  text-align: left;
+  background-color: green;
+  color: white;
+}
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: gray;
+  color: white;
+}
+button:hover {
+  cursor: pointer;
+}
+
+.cancel_btn {
+  color: #fff;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.edit_btn {
+  background-color: yellow;
+  color: #000;
+  border-radius: 10px;
+}
+.delete_btn {
+  background-color: red;
+  color: #fff;
+  border-radius: 10px;
+  margin-left: 15px;
+}

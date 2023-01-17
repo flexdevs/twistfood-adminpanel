@@ -1,0 +1,46 @@
+.login-container {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+h1 {
+  margin-bottom: 20px;
+}
+label {
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  margin-bottom: 10px;
+}
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: none;
+  border: 1px solid #d3d3d3;
+}
+input[type="text"]:invalid {
+  border-color: #ff0000;
+}
+
+input[type="button"] {
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #008000;
+  color: white;
+
+  outline: none;
+}
+.submit_btn{
+    background-color: #008000;
+    width: 80px;
+    height: 40px;
+    border-radius: 15px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
