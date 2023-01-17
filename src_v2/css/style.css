@@ -198,3 +198,8 @@ button:hover {
   border-radius: 10px;
   margin-left: 15px;
 }
+.add_modal{
+  display: none;
+}
+
+
