@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/products.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Fast Food Shop Admin Panel</h1>
+        <nav>
+            <a href="#menu">Menu</a>
+            <a href="#orders">Orders</a>
+            <a href="#customers">Customers</a>
+            <a href="./products.html">Products</a>
+          </nav>
+    </div>
+    
+<div class="" id="app">
+    <div class="wrapper">
+        <ul class="card_list">
+          <li v-for="product in products" :key="product.id" class="card">
+            <div class="card">
+              <img :src="product.imagePath" alt="" width="200" height="200" class="card-img-top">
+              <div class="card-body">
+                <h5  class="card-title">{{ product.productName }}</h5>
+                <p class="card_desc">{{ product.productDescription }}</p>
+               
+                <p class="card_price">narx : {{ product.price }}</p>
+             
+                <p class="card_id"> ID : {{ product.id }}</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+</div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./main.js" type="text/javascript"></script>
+</body>
+</html>
