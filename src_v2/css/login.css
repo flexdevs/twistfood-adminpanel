@@ -4,8 +4,9 @@
   text-align: center;
   padding: 20px;
 }
-h1 {
+h2 {
   margin-bottom: 20px;
+  color: #008000;
 }
 label {
   font-family: Arial, Helvetica, sans-serif;
