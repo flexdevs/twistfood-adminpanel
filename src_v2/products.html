@@ -11,9 +11,9 @@
     <div class="header">
         <h1>Fast Food Shop Admin Panel</h1>
         <nav>
-            <a href="#menu">Menu</a>
-            <a href="#orders">Orders</a>
-            <a href="#customers">Customers</a>
+            <a href="./main.html">Menu</a>
+            <a href="./main.html">Orders</a>
+            <a href="./main.html">Customers</a>
             <a href="./products.html">Products</a>
           </nav>
     </div>
@@ -22,13 +22,13 @@
     <div class="wrapper">
         <ul class="card_list">
           <li v-for="product in products" :key="product.id" class="card">
-            <div class="card">
+            <div class="card_body">
               <img :src="product.imagePath" alt="" width="200" height="200" class="card-img-top">
               <div class="card-body">
                 <h5  class="card-title">{{ product.productName }}</h5>
                 <p class="card_desc">{{ product.productDescription }}</p>
                
-                <p class="card_price">narx : {{ product.price }}</p>
+                <p class="card_price">  narx : <mark>{{ product.price }}</mark></p>
              
                 <p class="card_id"> ID : {{ product.id }}</p>
               </div>

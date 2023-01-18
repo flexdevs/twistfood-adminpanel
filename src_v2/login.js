@@ -28,7 +28,7 @@ createApp({
           })
           .then((result) => {
             localStorage.setItem("admin_token", result.token);
-            window.location = "./index.html";
+            window.location = "./main.html";
           })
           .catch((error) => {
             console.log("Login failed:", error);
