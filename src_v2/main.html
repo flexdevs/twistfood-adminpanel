@@ -9,7 +9,7 @@
 </head>
 <body>
     
-
+<div class="container">
     <div id="app">
 
         <div class="header">
@@ -105,18 +105,18 @@
 
 
           <nav>
-            <a href="#menu">Menu</a>
+            <a href="#menu">Categories</a>
             <a href="#orders">Orders</a>
-            <a href="#customers">Customers</a>
             <a href="./products.html">Products</a>
+            <a href="#">Discounts</a>
           </nav>
           <section id="menu">
-            <h2>Menu</h2>
+            <h2>Categories</h2>
       
             <table id="category">
               <tr>
                 <th>ID</th>
-                <th>Products</th>
+                <th>Categories</th>
                 <th>Action</th>
               </tr>
               <tr v-for="item in categories">
@@ -164,7 +164,7 @@
       
 
 
-          <section>
+          <section id="orders">
             <h2>Orders</h2>
             <table>
               <thead>
@@ -209,5 +209,6 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="./main.js" type="text/javascript"></script>
     <script src="./admin_Reg.js"></script>
+  </div>
 </body>
 </html>

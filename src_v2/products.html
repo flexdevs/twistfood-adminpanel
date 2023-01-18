@@ -1,43 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/products.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/products.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="header">
-        <h1>Fast Food Shop Admin Panel</h1>
-        <nav>
-            <a href="./main.html">Menu</a>
-            <a href="./main.html">Orders</a>
-            <a href="./main.html">Customers</a>
-            <a href="./products.html">Products</a>
-          </nav>
+      <h2>Fast Food Shop Admin Panel</h2>
+      <nav>
+        <a href="./products.html">Products</a>
+
+        <button class="add_product_btn">
+          
+          <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+          <svg
+            width="30px"
+            height="30px"
+            viewBox="0 0 24 24"
+            fill="#fff"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 8V16M16 12H8M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+              stroke="green"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          Add prducts
+        </button>
+      </nav>
     </div>
-    
-<div class="" id="app">
-    <div class="wrapper">
+
+    <div class="" id="app">
+      <div class="wrapper">
         <ul class="card_list">
           <li v-for="product in products" :key="product.id" class="card">
             <div class="card_body">
-              <img :src="product.imagePath" alt="" width="200" height="200" class="card-img-top">
+              <img
+                :src="product.imagePath"
+                alt=""
+                width="200"
+                height="200"
+                class="card-img-top"
+              />
               <div class="card-body">
-                <h5  class="card-title">{{ product.productName }}</h5>
+                <h5 class="card-title">{{ product.productName }}</h5>
                 <p class="card_desc">{{ product.productDescription }}</p>
-               
-                <p class="card_price">  narx : <mark>{{ product.price }}</mark></p>
-             
-                <p class="card_id"> ID : {{ product.id }}</p>
+
+                <p class="card_price">
+                  Narx : <mark>{{ product.price }}</mark>
+                </p>
+
+                <p class="card_id">ID : {{ product.id }}</p>
               </div>
             </div>
           </li>
         </ul>
       </div>
-</div>
+    </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="./main.js" type="text/javascript"></script>
-</body>
+  </body>
 </html>

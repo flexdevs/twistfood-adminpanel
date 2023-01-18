@@ -1,8 +1,4 @@
 
-
-
-
-
 let mRegBtn = document.getElementById("register_btn");
 mRegBtn.addEventListener("click", async (e) => {
   e.preventDefault();
