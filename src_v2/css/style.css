@@ -1,4 +1,4 @@
-/* 
+
 @font-face {
   font-family: 'Poppins';
   font-style: normal;
@@ -26,7 +26,7 @@
   src: local(''),
        url('../fonts/poppins-v20-latin-800.woff2') format('woff2'), 
        url('../fonts/poppins-v20-latin-800.woff') format('woff'); 
-}  */
+} 
 
 body {
   font-family: "Poppins", sans-serif;
